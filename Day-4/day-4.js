@@ -74,3 +74,54 @@ console.log((π/180)*75);
 console.log(Math.floor(Math.random() * 100) + 50)
 console.log(Math.max(23,99,-4,18));
 console.log(Math.pow(-349,2));
+//Challenge 3:
+console.log(Math.floor(Math.random()*(30 - 20 + 1))) + 20;
+console.log(Math.floor(Math.random()*(10-(-10)+1)))-10;
+console.log(Math.floor(Math.random()*(20-2+1)))+2;
+console.log(Math.floor(Math.random()*(19-2+1)))+2;
+//Challenge 4:
+const cube = (num)=> num ** 3;
+console.log(cube(5));
+const areaOfCircle = r => π*r**2;
+console.log(areaOfCircle(3));
+const randomBetween = (min,max) => {
+  return Math.floor(Math.random()*(max-min+1)+min);
+}
+console.log(randomBetween(3,6));
+
+function isEven(n){
+  if(n%2===0){
+  return true;
+  }else{
+    return false;
+  }
+}
+console.log(isEven(4));
+const toRadians = deg=> Math.PI/180 * deg;
+console.log(toRadians(90));
+const randomEven = (min,max)=>{
+  return Math.floor(Math.random() * (max/min) + 1) * min;
+}
+randomEven();
+
+const isOdd = n => n%2 === 1;
+console.log(isOdd(3));
+const randomsBetween = (min,max) => {
+  return Math.floor(Math.random()*(max-min+1))+min;
+}
+console.log(randomsBetween(3,6));
+
+const randomOdd = (min, max) => {
+  let num = Math.floor(Math.random() * (max - min + 1)) + min;
+  
+  if (num % 2 !== 1) {
+    num++;
+  }
+
+  if (num > max) {
+    num -= 2;
+  }
+
+  return num;
+};
+console.log(randomOdd(2,12));
